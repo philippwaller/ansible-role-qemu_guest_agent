@@ -1,0 +1,10 @@
+---
+- name: Install QEMU Guest Agent
+  become: true
+  ansible.builtin.package:
+    name: qemu-guest-agent
+    state: present
+    update_cache: "{{ qemu_guest_agent_update_package_cache }}"
+  when: ansible_system_vendor == 'QEMU'
+  notify:
+    - Enable QEMU Guest Agent

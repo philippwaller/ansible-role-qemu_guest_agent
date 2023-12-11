@@ -1,0 +1,16 @@
+---
+- name: Verify
+  hosts: all
+  become: false
+  gather_facts: false
+
+  tasks:
+    - name: Test connection
+      ansible.builtin.ping:
+
+    - name: Gather the package facts
+      ansible.builtin.package_facts:
+
+    - ansible.builtin.assert:
+        that:
+          - "'qemu-guest-agent' in ansible_facts.packages"

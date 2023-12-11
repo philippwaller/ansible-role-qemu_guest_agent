@@ -1,0 +1,16 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: docker
+platforms:
+  - name: ansible-qemu_quest_agent-${MOLECULE_DISTRO:-debian12}
+    image: geerlingguy/docker-${MOLECULE_DISTRO:-debian12}-ansible:latest
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:rw
+    privileged: true
+    pre_build_image: true
+provisioner:
+  name: ansible
+verifier:
+  name: ansible

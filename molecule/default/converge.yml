@@ -1,0 +1,14 @@
+---
+- name: Converge
+  hosts: all
+  become: false
+  gather_facts: false
+
+  pre_tasks:
+    - name: Set the fact `ansible_system_vendor` to `QEMU`
+      set_fact:
+        ansible_system_vendor: QEMU
+
+  roles:
+    - role: philippwaller.qemu_guest_agent
+      qemu_guest_agent_update_package_cache: true

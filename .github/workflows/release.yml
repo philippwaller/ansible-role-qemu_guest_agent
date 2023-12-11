@@ -1,0 +1,31 @@
+---
+name: Release
+on:
+  push:
+    tags:
+      - v*
+
+defaults:
+  run:
+    working-directory: philippwaller.qemu_guest_agent
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the codebase.
+        uses: actions/checkout@v4
+        with:
+          path: philippwaller.qemu_guest_agent
+
+      - name: Update Ansible Galaxy.
+        uses: robertdebock/galaxy-action@1.2.1
+        with:
+          galaxy_api_key: ${{ secrets.galaxy_api_key }}
+          git_branch: main
+
+      - name: Create Github Release.
+        uses: softprops/action-gh-release@v1
+        with:
+          generate_release_notes: true

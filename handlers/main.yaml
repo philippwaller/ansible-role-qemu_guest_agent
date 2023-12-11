@@ -1,0 +1,5 @@
+---
+- name: Enable QEMU Guest Agent
+  ansible.builtin.service:
+    name: qemu-guest-agent
+    enabled: true
