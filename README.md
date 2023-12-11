@@ -17,9 +17,12 @@ virtualization, offering improved performance and advanced management features.
 ## 🚀 Getting Started
 
 ### 📋 Prerequisites
-- **Ansible Installed:** Ensure Ansible is installed on your management machine. [Ansible Installation Guide](https://docs.ansible.com/ansible/latest/installation_guide/index.html)
-- **Python on Target System:** The target system must have Python installed for Ansible modules to function correctly.
-For systems lacking Python, consider using [Robert de Bock's Bootstrap Role](https://galaxy.ansible.com/robertdebock/bootstrap) 
+To successfully use this Ansible role, please ensure that your systems meet the following requirements:
+
+- **Ansible:** Your management system must have ansible-core 2.15 (equivalent to Ansible 8.0.0) or higher installed. For 
+detailed installation instructions, refer to the [Ansible Installation Guide](https://docs.ansible.com/ansible/latest/installation_guide/index.html). 
+- **Python on Target System:** Python is required on the target system for the correct functioning of Ansible modules. For 
+systems lacking Python, consider using [Robert de Bock's Bootstrap Role](https://galaxy.ansible.com/robertdebock/bootstrap) 
 to prepare your hosts.
 
 ### 📥 Installation
@@ -54,9 +57,17 @@ ansible-playbook your-playbook.yml
 |-----------------------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `qemu_guest_agent_update_package_cache` | `false` | This variable controls whether the package cache should be updated before installing the QEMU Guest Agent. Setting it to false can speed up the role execution if the package cache is already up-to-date. |
 
+## 🌍 Supported Operating Systems
+This role is compatible with the following operating systems:
+
+- CentOS: 7, 8
+- Debian: 10 (Buster), 11 (Bullseye), 12 (Bookworm)
+- Fedora: 34, 35, 36, 37, 38, 39
+- Rocky Linux: 8, 9
+- Ubuntu: 18.04 (Bionic Beaver), 20.04 (Focal Fossa), 22.04 (Jammy Jellyfish)
 
 ## 🤝 Contributing
-🌟 Contributions make the open-source community an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions make the open-source community an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
