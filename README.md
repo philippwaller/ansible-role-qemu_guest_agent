@@ -59,9 +59,13 @@ ansible-playbook your-playbook.yml
 
 ### ⚙️ Role Variables
 
-| Variable                                | Default | Description                                                                                                                                                                                                |
-|-----------------------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `qemu_guest_agent_update_package_cache` | `false` | This variable controls whether the package cache should be updated before installing the QEMU Guest Agent. Setting it to false can speed up the role execution if the package cache is already up-to-date. |
+The default values for the variables are set in [`defaults/main.yaml`](defaults/main.yaml):
+
+```yaml
+---
+# Controls whether the package cache should be updated before installing the QEMU Guest Agent.
+qemu_guest_agent_update_package_cache: false
+```
 
 ## 🌍 Supported Operating Systems
 
