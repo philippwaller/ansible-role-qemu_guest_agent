@@ -1,2 +1,3 @@
 ---
+# Controls whether the package cache should be updated before installing the QEMU Guest Agent.
 qemu_guest_agent_update_package_cache: false
