@@ -71,11 +71,11 @@ qemu_guest_agent_update_package_cache: false
 
 This role is compatible with the following operating systems:
 
-- CentOS: 7, 8
-- Debian: 10 (Buster), 11 (Bullseye), 12 (Bookworm)
-- Fedora: 34, 35, 36, 37, 38, 39
-- Rocky Linux: 8, 9
-- Ubuntu: 18.04 (Bionic Beaver), 20.04 (Focal Fossa), 22.04 (Jammy Jellyfish)
+- **CentOS:** 7, 8
+- **Debian:** 10 (Buster), 11 (Bullseye), 12 (Bookworm)
+- **Fedora:** 34, 35, 36, 37, 38, 39
+- **Rocky Linux:** 8, 9
+- **Ubuntu:** 18.04 (Bionic Beaver), 20.04 (Focal Fossa), 22.04 (Jammy Jellyfish)
 
 ## 🤝 Contributing
 
@@ -93,7 +93,7 @@ are **greatly appreciated**.
 We use [pre-commit](https://pre-commit.com/) for code quality:
 
 ```shell
-pip install pre-commit
+pip install pre-commit ansible-lint yamllint
 pre-commit install
 pre-commit run
 ```
