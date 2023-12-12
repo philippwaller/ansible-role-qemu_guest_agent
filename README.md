@@ -1,6 +1,6 @@
 # Ansible Role: QEMU Guest Agent 🚀
 [![GitHub release (with filter)](https://img.shields.io/github/v/release/philippwaller/ansible-role-qemu_guest_agent)](https://github.com/philippwaller/ansible-role-qemu_guest_agent/releases)
-[![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/philippwaller/ansible-role-qemu_guest_agent/ci.yaml)](https://github.com/philippwaller/ansible-role-qemu_guest_agent/actions/workflows/ci.yaml)
+[![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/philippwaller/ansible-role-qemu_guest_agent/test.yaml)](https://github.com/philippwaller/ansible-role-qemu_guest_agent/actions/workflows/test.yaml)
 [![Ansible Role](https://img.shields.io/ansible/role/d/philippwaller/qemu_guest_agent)](https://galaxy.ansible.com/ui/standalone/roles/philippwaller/qemu_guest_agent/)
 [![GitHub Repo stars](https://img.shields.io/github/stars/philippwaller/ansible-role-qemu_guest_agent)](https://github.com/philippwaller/ansible-role-qemu_guest_agent)
 [![GitHub License](https://img.shields.io/github/license/philippwaller/ansible-role-qemu_guest_agent)](https://github.com/philippwaller/ansible-role-qemu_guest_agent/blob/main/LICENSE.md)
